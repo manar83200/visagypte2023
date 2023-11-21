@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visagypte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="photo/logo_v2.png" alt="Logo">
+        </div>
+        <img class="menu" src="photo/menu.png" alt="Menu">
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="exposition.html">Exposition</a></li>
+            <li><a href="contact.html">Coordonnées</a></li>
+            <li><a href="fiche.html">Contactez-nous</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuIcon = document.querySelector('.menu');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuIcon.addEventListener('click', function () {
+                navLinks.classList.toggle('show');
+                menuIcon.classList.toggle('hide');
+            });
+        });
+    </script>
+
+    <header>
+        <h1>Visagypte</h1>
+    </header>
+
+    <div class="accueil">
+        <div class="text-container texte-accueil">
+            <p>
+                Dans l'Égypte antique, les intrépides explorateurs VISAGYPTE découvrent une carte secrète menant au trésor caché du pharaon légendaire. Traversant les déserts impitoyables, bravant les énigmes des anciens temples, ils parviennent enfin à une chambre secrète où repose le trésor scintillant, gardé par des mystères millénaires. VISAGYPTE réalise que le plus grand trésor est la sagesse du pharaon, gravée sur des tablettes anciennes, offrant un aperçu précieux de la grandeur passée de l'Égypte.
+            </p>
+            <button>
+                <a href="exposition.html" class="button">Click Me</a>
+              </button>
+        </div>
+    </div>
+
+    <div class="photos-container">
+        <img src="photo/image1.png" alt="Photo 1" class="photo">
+    </div>
+
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+
+        <p>&copy;2023 MANAR FETTICH</p>
+      </footer>
+
+</body>
+</html>
